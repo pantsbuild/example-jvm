@@ -1,0 +1,1 @@
+scalatest_tests()
