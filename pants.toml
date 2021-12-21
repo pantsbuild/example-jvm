@@ -10,6 +10,23 @@ backend_packages = [
   "pants.backend.experimental.java.lint.google_java_format",
 ]
 
+[javac]
+args = [
+  "-deprecation",
+  "-encoding UTF-8",
+]
+
+[scalac]
+args = [
+  "-deprecation",
+  "-encoding UTF-8",
+  # An option for the compiler plugin enabled below.
+  "-P:acyclic:force",
+]
+# Globally enabled `scalac` plugins, which are defined as `scalac_plugin` targets. This one is
+# defined at the root of the repository.
+plugins_global = ["//:acyclic"]
+
 [anonymous-telemetry]
 enabled = true
 repo_id = "79B3C35A-85A9-41A4-AAA8-04484F41A8F7"
