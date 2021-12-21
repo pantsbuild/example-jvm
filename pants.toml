@@ -1,0 +1,15 @@
+# Copyright 2021 Pants project contributors.
+# Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+[GLOBAL]
+pants_version = "2.9.0rc0"
+backend_packages = [
+  "pants.backend.experimental.scala",
+  "pants.backend.experimental.scala.lint.scalafmt",
+  "pants.backend.experimental.java",
+  "pants.backend.experimental.java.lint.google_java_format",
+]
+
+[anonymous-telemetry]
+enabled = true
+repo_id = "79B3C35A-85A9-41A4-AAA8-04484F41A8F7"
