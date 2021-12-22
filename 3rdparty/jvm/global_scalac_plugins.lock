@@ -1,0 +1,19 @@
+[
+    {
+        "coord": {
+            "group": "com.lihaoyi",
+            "artifact": "acyclic_2.13",
+            "version": "0.2.1",
+            "packaging": "jar"
+        },
+        "directDependencies": [],
+        "dependencies": [],
+        "file_name": "com.lihaoyi_acyclic_2.13_0.2.1.jar",
+        "file_digest": {
+            "fingerprint": "4bc4656140ad5e4802fedcdbe920ec7c92dbebf5e76d1c60d35676a314481944",
+            "serialized_bytes_length": 62534
+        },
+        "remote_url": null,
+        "pants_address": null
+    }
+]

@@ -1,0 +1,38 @@
+# Copyright 2021 Pants project contributors.
+# Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+[GLOBAL]
+pants_version = "2.9.0rc1"
+backend_packages = [
+  # This repository demonstrates a mix of Java and Scala, and so both backends are enabled. But each
+  # backend can be used independently, so there is no need to expose Scala BUILD file
+  # symbols if you have a pure-Java repository (or vice versa).
+  #
+  # Linters/formatters are also hosted in independent backends, to allow them to be independently
+  # enabled.
+  "pants.backend.experimental.java",
+  "pants.backend.experimental.java.lint.google_java_format",
+  "pants.backend.experimental.scala",
+  "pants.backend.experimental.scala.lint.scalafmt",
+]
+
+[javac]
+args = [
+  "-deprecation",
+  "-encoding UTF-8",
+]
+
+[scalac]
+args = [
+  "-deprecation",
+  "-encoding UTF-8",
+  # An option for the compiler plugin enabled below.
+  "-P:acyclic:force",
+]
+# Globally enabled `scalac` plugins, which are defined as `scalac_plugin` targets. This one is
+# defined at the root of the repository.
+plugins_global = ["//:acyclic"]
+
+[anonymous-telemetry]
+enabled = true
+repo_id = "79B3C35A-85A9-41A4-AAA8-04484F41A8F7"
