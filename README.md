@@ -9,8 +9,8 @@ benefits Pants brings to Java and Scala projects.
 
 This repository demonstrates a mix of Java and Scala, which is a common use case. But the Java
 and Scala backends can be independently enabled, so there is no need to expose Scala BUILD file
-symbols if you have a pure-Java repository. See comments in the `backends` section of
-[`pants.toml`](./pants.toml).
+symbols if you have a pure-Java repository (or vice versa). See comments in the `backends` section
+of [`pants.toml`](./pants.toml).
 
 This is only one possible way of laying out your project with Pants. See 
 [pantsbuild.org/docs/source-roots#examples](https://www.pantsbuild.org/docs/source-roots#examples) 

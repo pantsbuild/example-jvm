@@ -6,7 +6,7 @@ pants_version = "2.9.0rc1"
 backend_packages = [
   # This repository demonstrates a mix of Java and Scala, and so both backends are enabled. But each
   # backend can be used independently, so there is no need to expose Scala BUILD file
-  # symbols if you have a pure-Java repository.
+  # symbols if you have a pure-Java repository (or vice versa).
   #
   # Linters/formatters are also hosted in independent backends, to allow them to be independently
   # enabled.
