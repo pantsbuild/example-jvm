@@ -70,12 +70,13 @@ Try these out in this repo!
 ./pants check src/jvm/org/pantsbuild/example/lib/ExampleLib.java  # Compile a file and its deps.
 ```
 
-## Run tests
+## Run and debug tests
 
 ```
 ./pants test ::  # Run all tests in the repository.
 ./pants test tests/jvm/org/pantsbuild/example/lib:  # Run all the tests in this directory.
 ./pants test tests/jvm/org/pantsbuild/example/lib/ExampleLibSpec.scala -- -z hello  # Run one test method.
+./pants test --debug tests/jvm/org/pantsbuild/example/lib/ExampleLibSpec.scala  # Debug one file.
 ```
 
 ## Create a binary file
