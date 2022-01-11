@@ -2,7 +2,7 @@
 # Licensed under the Apache License, Version 2.0 (see LICENSE).
 
 [GLOBAL]
-pants_version = "2.9.0rc2"
+pants_version = "2.9.0rc5"
 backend_packages = [
   # This repository demonstrates a mix of Java and Scala, and so both backends are enabled. But each
   # backend can be used independently, so there is no need to expose Scala BUILD file
@@ -15,6 +15,14 @@ backend_packages = [
   "pants.backend.experimental.scala",
   "pants.backend.experimental.scala.lint.scalafmt",
 ]
+
+[source]
+# Pants supports many layouts of sources: from Maven/SBT style project-centric layouts, to
+# monorepo layouts. In this case, we have a monorepo layout, with all sources under a `src`
+# directory, organized by type.
+#
+# See https://www.pantsbuild.org/docs/source-roots for more information.
+root_patterns = ["/src/*"]
 
 [javac]
 args = [
