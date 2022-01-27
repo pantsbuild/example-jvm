@@ -2,7 +2,7 @@
 # Licensed under the Apache License, Version 2.0 (see LICENSE).
 
 [GLOBAL]
-pants_version = "2.9.0"
+pants_version = "2.10.0rc0"
 backend_packages = [
   # This repository demonstrates a mix of Java and Scala, and so both backends are enabled. But each
   # backend can be used independently, so there is no need to expose Scala BUILD file
@@ -40,6 +40,7 @@ args = [
 # Globally enabled `scalac` plugins, which are defined as `scalac_plugin` targets. This one is
 # defined at the root of the repository.
 plugins_global = ["//:acyclic"]
+plugins_global_lockfile = "3rdparty/jvm/global_scalac_plugins.lock"
 
 [jvm]
 # Configure remote debugging options that will be used with `test --debug`.
