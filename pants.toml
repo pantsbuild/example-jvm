@@ -33,10 +33,11 @@ args = [
   "-encoding UTF-8",
 ]
 
-# Configure the specific Scala version to use for a resolve. This version must match the version used for the
-# `jvm_artifact` target providing the scala-library runtime jar.
+# Each resolve is associated with a single version of Scala. To support multiple Scala versions,
+# use multiple resolves.
 [scala.version_for_resolve]
 jvm-default = "2.13.8"
+"scala-2.12" = "2.12.15"
 
 [scalac]
 args = [
@@ -46,12 +47,22 @@ args = [
   "-P:acyclic:force",
 ]
 
+# Globally enabled `scalac` plugins, which are defined as `scalac_plugin` targets. Each set of
+# plugins is enabled for a specific resolve by specifying the name of the plugin. Pants
+# will find the applicable `scalac_plugin` targets using those names.
 [scalac.plugins_for_resolve]
-# Resolve-global `scalac` plugins, which are defined as `scalac_plugin` targets.
 jvm-default = "acyclic"
+"scala-2.12" = "acyclic"
 
-[jvm]
+# Configure multiple resolves here. Each resolve is a complete classpath with jars fixed to
+# specific version by a "lock file". The lock file for each resolve is specified by the
+# --jvm-resolves option. To (re-)generate lock files, run `./pants generate-lockfiles`.
+[jvm.resolves]
+jvm-default = "3rdparty/jvm/default.lock"
+"scala-2.12" = "3rdparty/jvm/scala-2.12.lock"
+
 # Configure remote debugging options that will be used with `test --debug`.
+[jvm]
 debug_args = [
   "-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005",
 ]
