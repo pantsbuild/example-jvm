@@ -1,8 +1,3 @@
 scalatest_tests(
-    jdk="adopt:1.11",
-)
-
-scalatest_tests(
-    name="tests_adop_1.12",
-    jdk="adopt:1.12.0.2",
+    jdk=parametrize(adopt_11="adopt:1.11", adopt_12="adopt:1.12.0.2"),
 )
