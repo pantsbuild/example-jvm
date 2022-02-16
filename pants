@@ -16,6 +16,7 @@ set -eou pipefail
 #  locate the main branch SHA, set PANTS_SHA=<SHA> in the environment, and run this script as usual.
 #
 # E.g., PANTS_SHA=725fdaf504237190f6787dda3d72c39010a4c574 ./pants --version
+PANTS_SHA=0c28019796250b5dac84891a14c1cf006183c08c
 
 PYTHON_BIN_NAME="${PYTHON:-unspecified}"
 
