@@ -22,7 +22,9 @@ fi
 #  locate the main branch SHA, set PANTS_SHA=<SHA> in the environment, and run this script as usual.
 #
 # E.g., PANTS_SHA=725fdaf504237190f6787dda3d72c39010a4c574 ./pants --version
-PANTS_SHA=0c28019796250b5dac84891a14c1cf006183c08c
+
+# TODO: Picks up https://github.com/pantsbuild/pants/pull/14516.
+PANTS_SHA=fc5105d86f58f7371338de3085bb98a5c933fba4
 
 PYTHON_BIN_NAME="${PYTHON:-unspecified}"
 
