@@ -17,9 +17,6 @@ set -eou pipefail
 #
 # E.g., PANTS_SHA=725fdaf504237190f6787dda3d72c39010a4c574 ./pants --version
 
-# TODO: Picks up https://github.com/pantsbuild/pants/pull/14510.
-PANTS_SHA=79fe06e3ce4f16e45e04f59ca61de9fe19e4e216
-
 PYTHON_BIN_NAME="${PYTHON:-unspecified}"
 
 # Set this to specify a non-standard location for this script to read the Pants version from.
