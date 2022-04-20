@@ -44,7 +44,7 @@ args = [
 ]
 
 [scalac.plugins_for_resolve]
-# Globally enabled `scalac` plugins, which are defined as `scalac_plugin` targets.
+# Resolve-global `scalac` plugins, which are defined as `scalac_plugin` targets.
 jvm-default = "acyclic"
 
 [jvm]
