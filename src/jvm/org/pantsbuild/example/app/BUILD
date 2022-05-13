@@ -1,5 +1,7 @@
 scala_sources()
 
+kotlin_sources(name="kotlin")
+
 deploy_jar(
     name="bin",
     main="org.pantsbuild.example.app.ExampleApp",
