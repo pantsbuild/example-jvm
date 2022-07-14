@@ -7,4 +7,5 @@ jvm_artifact(
     # artifact. See https://www.pantsbuild.org/v2.9/docs/reference-jvm_artifact#codepackagescode
     # for more information.
     packages=["com.google.common.**"],
+    resolve=parametrize("jvm-default", "scala-2.12"),
 )

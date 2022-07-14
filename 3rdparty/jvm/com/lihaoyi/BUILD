@@ -9,3 +9,14 @@ jvm_artifact(
     # for more information.
     packages=["acyclic.**"],
 )
+
+# TODO: For now, a separate target is needed for each scala version, because both the resolve and
+# artifact need to be templated. See https://github.com/pantsbuild/pants/issues/12969.
+jvm_artifact(
+    name="acyclic_2.12",
+    group="com.lihaoyi",
+    artifact="acyclic_2.12",
+    version="0.2.1",
+    packages=["acyclic.**"],
+    resolve="scala-2.12",
+)

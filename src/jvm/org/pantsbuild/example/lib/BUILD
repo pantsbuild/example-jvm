@@ -4,4 +4,5 @@ java_sources(
         # depend on them.
         "src/resources/org/pantsbuild/example/lib",
     ],
+    resolve=parametrize("jvm-default", "scala-2.12"),
 )

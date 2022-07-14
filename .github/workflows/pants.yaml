@@ -37,7 +37,8 @@ jobs:
       run: ./pants lint check test '::'
     - name: Package / Run
       run: |
-        ./pants package ::
+        # TODO: See https://github.com/pantsbuild/pants/issues/16189.
+        ./pants filter --target-type=deploy_jar :: | xargs -L1 ./pants package
     - name: Upload Pants log
       uses: actions/upload-artifact@v2
       with:
