@@ -2,7 +2,7 @@
 # Licensed under the Apache License, Version 2.0 (see LICENSE).
 
 [GLOBAL]
-pants_version = "2.12.0"
+pants_version = "2.13.0"
 backend_packages = [
   # This repository demonstrates a mix of Java and Scala, and so both backends are enabled. But each
   # backend can be used independently, so there is no need to expose Scala BUILD file
@@ -15,6 +15,11 @@ backend_packages = [
   "pants.backend.experimental.scala",
   "pants.backend.experimental.scala.lint.scalafmt",
 ]
+
+# Opt in to future behaviors that will become the default in Pants v2.14.
+# These directives should be removed in Pants v2.14.x and higher.
+use_deprecated_directory_cli_args_semantics = false
+use_deprecated_pex_binary_run_semantics = false
 
 [source]
 # Pants supports many layouts of sources: from Maven/SBT style project-centric layouts, to
@@ -49,6 +54,15 @@ args = [
 [scalac.plugins_for_resolve]
 # Resolve-global `scalac` plugins, which are defined as `scalac_plugin` targets.
 jvm-default = "acyclic"
+
+[scala-infer]
+# Opt in to future change to Scala dependency inference which will become to the default in Pants v2.14+:
+#   We have made several improvements to Pants's Scala dependency inference, where we no longer think
+#   it's necessary to adding dependencies on sibling targets. If you have compilation failures after
+#   disabling this option, please consider opening an issue at
+#   https://github.com/pantsbuild/pants/issues/new so that we can continue to improve Pants's
+#   dependency inference.
+force_add_siblings_as_dependencies = false
 
 [jvm]
 # Configure remote debugging options that will be used with `test --debug`.
