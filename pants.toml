@@ -2,7 +2,7 @@
 # Licensed under the Apache License, Version 2.0 (see LICENSE).
 
 [GLOBAL]
-pants_version = "2.13.0"
+pants_version = "2.14.0"
 backend_packages = [
   # This repository demonstrates a mix of Java and Scala, and so both backends are enabled. But each
   # backend can be used independently, so there is no need to expose Scala BUILD file
@@ -15,11 +15,6 @@ backend_packages = [
   "pants.backend.experimental.scala",
   "pants.backend.experimental.scala.lint.scalafmt",
 ]
-
-# Opt in to future behaviors that will become the default in Pants v2.14.
-# These directives should be removed in Pants v2.14.x and higher.
-use_deprecated_directory_cli_args_semantics = false
-use_deprecated_pex_binary_run_semantics = false
 
 [source]
 # Pants supports many layouts of sources: from Maven/SBT style project-centric layouts, to
