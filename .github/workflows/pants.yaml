@@ -33,9 +33,9 @@ jobs:
         # cache0 makes it easy to bust the cache if needed
         # just increase the integer to start with a fresh cache
         gha-cache-key: cache0-py${{ matrix.python-version }}
-        # The JVM backend doesn't use named caches. See the example-python repo for an example
-        # of how to set up this cache.
-        named-caches-hash: ""
+        # The JVM backend uses named_caches for Coursier state,
+        # so it is appropriate to invalidate on lockfile changes.
+        named-caches-hash: ${{ hashFiles('3rdparty/jvm/default.lock') }}
         # If you're not using a fine-grained remote caching service (see https://www.pantsbuild.org/docs/remote-caching),
         # then you may also want to preserve the local Pants cache (lmdb_store). However this must invalidate for
         # changes to any file that can affect the build, so may not be practical in larger repos.
