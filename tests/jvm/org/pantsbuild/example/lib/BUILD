@@ -1,5 +1,5 @@
 scalatest_tests(
     # These tests are `parametrize`d, so that they will run against two different
     # JDK versions.
-    jdk=parametrize(adopt_11="adopt:1.11", adopt_12="adopt:1.12.0.2"),
+    jdk=parametrize(temurin_11="temurin:1.11", temurin_17="temurin:1.17"),
 )
