@@ -2,7 +2,7 @@
 # Licensed under the Apache License, Version 2.0 (see LICENSE).
 
 [GLOBAL]
-pants_version = "2.20.0"
+pants_version = "2.20.1"
 backend_packages = [
   # This repository demonstrates a mix of Java and Scala, and so both backends are enabled. But each
   # backend can be used independently, so there is no need to expose Scala BUILD file
@@ -68,3 +68,6 @@ debug_args = [
 [anonymous-telemetry]
 enabled = true
 repo_id = "79B3C35A-85A9-41A4-AAA8-04484F41A8F7"
+
+[experimental-bsp]
+groups_config_files = ["bsp-groups.toml"]

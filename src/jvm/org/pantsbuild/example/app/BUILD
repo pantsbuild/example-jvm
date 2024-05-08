@@ -1,4 +1,4 @@
-scala_sources()
+java_sources()
 
 deploy_jar(
     name="bin",

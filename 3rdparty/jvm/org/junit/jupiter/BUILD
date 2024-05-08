@@ -1,0 +1,1 @@
+jvm_artifact(group="org.junit.jupiter", artifact="junit-jupiter-api", version="5.10.2")

@@ -6,3 +6,7 @@
 
 # Editor specific files
 *.swp
+/.idea/
+
+# Written by the `./pants experimental-bsp` command on a user-by-user basis.
+/.bsp/

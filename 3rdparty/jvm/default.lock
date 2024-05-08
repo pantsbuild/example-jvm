@@ -8,6 +8,7 @@
 #   "generated_with_requirements": [
 #     "com.google.guava:guava:31.0.1-jre,url=not_provided,jar=not_provided",
 #     "com.lihaoyi:acyclic_2.13:0.2.1,url=not_provided,jar=not_provided",
+#     "org.junit.jupiter:junit-jupiter-api:5.10.2,url=not_provided,jar=not_provided",
 #     "org.scala-lang:scala-library:2.13.8,url=not_provided,jar=not_provided",
 #     "org.scalatest:scalatest_2.13:3.2.10,url=not_provided,jar=not_provided"
 #   ]
@@ -56,18 +57,6 @@ serialized_bytes_length = 4617
 [[entries]]
 file_name = "com.google.guava_guava_31.0.1-jre.jar"
 [[entries.directDependencies]]
-group = "com.google.guava"
-artifact = "listenablefuture"
-version = "9999.0-empty-to-avoid-conflict-with-guava"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "com.google.j2objc"
-artifact = "j2objc-annotations"
-version = "1.3"
-packaging = "jar"
-
-[[entries.directDependencies]]
 group = "com.google.code.findbugs"
 artifact = "jsr305"
 version = "3.0.2"
@@ -80,12 +69,42 @@ version = "2.7.1"
 packaging = "jar"
 
 [[entries.directDependencies]]
+group = "com.google.guava"
+artifact = "failureaccess"
+version = "1.0.1"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "com.google.guava"
+artifact = "listenablefuture"
+version = "9999.0-empty-to-avoid-conflict-with-guava"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "com.google.j2objc"
+artifact = "j2objc-annotations"
+version = "1.3"
+packaging = "jar"
+
+[[entries.directDependencies]]
 group = "org.checkerframework"
 artifact = "checker-qual"
 version = "3.12.0"
 packaging = "jar"
 
-[[entries.directDependencies]]
+[[entries.dependencies]]
+group = "com.google.code.findbugs"
+artifact = "jsr305"
+version = "3.0.2"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "com.google.errorprone"
+artifact = "error_prone_annotations"
+version = "2.7.1"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "com.google.guava"
 artifact = "failureaccess"
 version = "1.0.1"
@@ -104,27 +123,9 @@ version = "1.3"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "com.google.code.findbugs"
-artifact = "jsr305"
-version = "3.0.2"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "com.google.errorprone"
-artifact = "error_prone_annotations"
-version = "2.7.1"
-packaging = "jar"
-
-[[entries.dependencies]]
 group = "org.checkerframework"
 artifact = "checker-qual"
 version = "3.12.0"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "com.google.guava"
-artifact = "failureaccess"
-version = "1.0.1"
 packaging = "jar"
 
 
@@ -178,6 +179,19 @@ serialized_bytes_length = 62534
 [[entries]]
 directDependencies = []
 dependencies = []
+file_name = "org.apiguardian_apiguardian-api_1.1.2.jar"
+
+[entries.coord]
+group = "org.apiguardian"
+artifact = "apiguardian-api"
+version = "1.1.2"
+packaging = "jar"
+[entries.file_digest]
+fingerprint = "b509448ac506d607319f182537f0b35d71007582ec741832a1f111e5b5b70b38"
+serialized_bytes_length = 6806
+[[entries]]
+directDependencies = []
+dependencies = []
 file_name = "org.checkerframework_checker-qual_3.12.0.jar"
 
 [entries.coord]
@@ -188,6 +202,89 @@ packaging = "jar"
 [entries.file_digest]
 fingerprint = "ff10785ac2a357ec5de9c293cb982a2cbb605c0309ea4cc1cb9b9bc6dbe7f3cb"
 serialized_bytes_length = 208835
+[[entries]]
+file_name = "org.junit.jupiter_junit-jupiter-api_5.10.2.jar"
+[[entries.directDependencies]]
+group = "org.apiguardian"
+artifact = "apiguardian-api"
+version = "1.1.2"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "org.junit.platform"
+artifact = "junit-platform-commons"
+version = "1.10.2"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "org.opentest4j"
+artifact = "opentest4j"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.apiguardian"
+artifact = "apiguardian-api"
+version = "1.1.2"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.junit.platform"
+artifact = "junit-platform-commons"
+version = "1.10.2"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.opentest4j"
+artifact = "opentest4j"
+version = "1.3.0"
+packaging = "jar"
+
+
+[entries.coord]
+group = "org.junit.jupiter"
+artifact = "junit-jupiter-api"
+version = "5.10.2"
+packaging = "jar"
+[entries.file_digest]
+fingerprint = "afff77c186cd317275803872fa5133aa801fd6ac40bd91c78a6cf8009b4b17cc"
+serialized_bytes_length = 210956
+[[entries]]
+file_name = "org.junit.platform_junit-platform-commons_1.10.2.jar"
+[[entries.directDependencies]]
+group = "org.apiguardian"
+artifact = "apiguardian-api"
+version = "1.1.2"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.apiguardian"
+artifact = "apiguardian-api"
+version = "1.1.2"
+packaging = "jar"
+
+
+[entries.coord]
+group = "org.junit.platform"
+artifact = "junit-platform-commons"
+version = "1.10.2"
+packaging = "jar"
+[entries.file_digest]
+fingerprint = "b56a5ec000a479df4973b18bba24c98fe0db8faa14c8907d3ef451d8c71fd8ae"
+serialized_bytes_length = 106232
+[[entries]]
+directDependencies = []
+dependencies = []
+file_name = "org.opentest4j_opentest4j_1.3.0.jar"
+
+[entries.coord]
+group = "org.opentest4j"
+artifact = "opentest4j"
+version = "1.3.0"
+packaging = "jar"
+[entries.file_digest]
+fingerprint = "48e2df636cab6563ced64dcdff8abb2355627cb236ef0bf37598682ddf742f1b"
+serialized_bytes_length = 14304
 [[entries]]
 file_name = "org.scala-lang.modules_scala-xml_2.13_1.3.0.jar"
 [[entries.directDependencies]]
@@ -298,21 +395,21 @@ serialized_bytes_length = 1413
 [[entries]]
 file_name = "org.scalatest_scalatest-core_2.13_3.2.10.jar"
 [[entries.directDependencies]]
-group = "org.scala-lang"
-artifact = "scala-reflect"
-version = "2.13.6"
-packaging = "jar"
-
-[[entries.directDependencies]]
 group = "org.scala-lang.modules"
 artifact = "scala-xml_2.13"
 version = "1.3.0"
 packaging = "jar"
 
 [[entries.directDependencies]]
-group = "org.scalatest"
-artifact = "scalatest-compatible"
-version = "3.2.10"
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "org.scala-lang"
+artifact = "scala-reflect"
+version = "2.13.6"
 packaging = "jar"
 
 [[entries.directDependencies]]
@@ -322,6 +419,18 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.directDependencies]]
+group = "org.scalatest"
+artifact = "scalatest-compatible"
+version = "3.2.10"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-library"
 version = "2.13.8"
@@ -334,27 +443,15 @@ version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalatest"
-artifact = "scalatest-compatible"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
 group = "org.scalactic"
 artifact = "scalactic_2.13"
 version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
+group = "org.scalatest"
+artifact = "scalatest-compatible"
+version = "3.2.10"
 packaging = "jar"
 
 
@@ -387,15 +484,27 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-reflect"
 version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
+group = "org.scalactic"
+artifact = "scalactic_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -408,18 +517,6 @@ packaging = "jar"
 group = "org.scalatest"
 artifact = "scalatest-core_2.13"
 version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
 packaging = "jar"
 
 
@@ -452,15 +549,27 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-reflect"
 version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
+group = "org.scalactic"
+artifact = "scalactic_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -473,18 +582,6 @@ packaging = "jar"
 group = "org.scalatest"
 artifact = "scalatest-core_2.13"
 version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
 packaging = "jar"
 
 
@@ -517,15 +614,27 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-reflect"
 version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
+group = "org.scalactic"
+artifact = "scalactic_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -538,18 +647,6 @@ packaging = "jar"
 group = "org.scalatest"
 artifact = "scalatest-core_2.13"
 version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
 packaging = "jar"
 
 
@@ -582,15 +679,27 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-reflect"
 version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
+group = "org.scalactic"
+artifact = "scalactic_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -603,18 +712,6 @@ packaging = "jar"
 group = "org.scalatest"
 artifact = "scalatest-core_2.13"
 version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
 packaging = "jar"
 
 
@@ -647,15 +744,27 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-reflect"
 version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
+group = "org.scalactic"
+artifact = "scalactic_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -668,18 +777,6 @@ packaging = "jar"
 group = "org.scalatest"
 artifact = "scalatest-core_2.13"
 version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
 packaging = "jar"
 
 
@@ -712,15 +809,27 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-reflect"
 version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
+group = "org.scalactic"
+artifact = "scalactic_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -733,18 +842,6 @@ packaging = "jar"
 group = "org.scalatest"
 artifact = "scalatest-core_2.13"
 version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
 packaging = "jar"
 
 
@@ -777,15 +874,27 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-reflect"
 version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
+group = "org.scalactic"
+artifact = "scalactic_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -798,18 +907,6 @@ packaging = "jar"
 group = "org.scalatest"
 artifact = "scalatest-core_2.13"
 version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
 packaging = "jar"
 
 
@@ -842,15 +939,27 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-reflect"
 version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
+group = "org.scalactic"
+artifact = "scalactic_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -866,21 +975,9 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
 group = "org.scalatest"
 artifact = "scalatest-matchers-core_2.13"
 version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
 packaging = "jar"
 
 
@@ -913,15 +1010,27 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-reflect"
 version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
+group = "org.scalactic"
+artifact = "scalactic_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -934,18 +1043,6 @@ packaging = "jar"
 group = "org.scalatest"
 artifact = "scalatest-core_2.13"
 version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
 packaging = "jar"
 
 
@@ -978,15 +1075,27 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-reflect"
 version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
+group = "org.scalactic"
+artifact = "scalactic_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -999,18 +1108,6 @@ packaging = "jar"
 group = "org.scalatest"
 artifact = "scalatest-core_2.13"
 version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
 packaging = "jar"
 
 
@@ -1043,15 +1140,27 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-reflect"
 version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
+group = "org.scalactic"
+artifact = "scalactic_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -1067,21 +1176,9 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
 group = "org.scalatest"
 artifact = "scalatest-matchers-core_2.13"
 version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
 packaging = "jar"
 
 
@@ -1114,15 +1211,27 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
+group = "org.scala-lang.modules"
+artifact = "scala-xml_2.13"
+version = "1.3.0"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
 group = "org.scala-lang"
 artifact = "scala-reflect"
 version = "2.13.6"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang.modules"
-artifact = "scala-xml_2.13"
-version = "1.3.0"
+group = "org.scalactic"
+artifact = "scalactic_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
@@ -1135,18 +1244,6 @@ packaging = "jar"
 group = "org.scalatest"
 artifact = "scalatest-core_2.13"
 version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
 packaging = "jar"
 
 
@@ -1161,8 +1258,32 @@ serialized_bytes_length = 134857
 [[entries]]
 file_name = "org.scalatest_scalatest_2.13_3.2.10.jar"
 [[entries.directDependencies]]
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "org.scala-lang"
+artifact = "scala-reflect"
+version = "2.13.6"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "org.scalatest"
+artifact = "scalatest-core_2.13"
+version = "3.2.10"
+packaging = "jar"
+
+[[entries.directDependencies]]
 group = "org.scalatest"
 artifact = "scalatest-diagrams_2.13"
+version = "3.2.10"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "org.scalatest"
+artifact = "scalatest-featurespec_2.13"
 version = "3.2.10"
 packaging = "jar"
 
@@ -1174,55 +1295,13 @@ packaging = "jar"
 
 [[entries.directDependencies]]
 group = "org.scalatest"
-artifact = "scalatest-funspec_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.scala-lang"
-artifact = "scala-reflect"
-version = "2.13.6"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.scalatest"
-artifact = "scalatest-refspec_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.scalatest"
-artifact = "scalatest-wordspec_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.scalatest"
-artifact = "scalatest-propspec_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.scalatest"
-artifact = "scalatest-shouldmatchers_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.scalatest"
-artifact = "scalatest-core_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.scalatest"
-artifact = "scalatest-mustmatchers_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.directDependencies]]
-group = "org.scalatest"
 artifact = "scalatest-freespec_2.13"
+version = "3.2.10"
+packaging = "jar"
+
+[[entries.directDependencies]]
+group = "org.scalatest"
+artifact = "scalatest-funspec_2.13"
 version = "3.2.10"
 packaging = "jar"
 
@@ -1239,48 +1318,30 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.directDependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
+group = "org.scalatest"
+artifact = "scalatest-mustmatchers_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.directDependencies]]
 group = "org.scalatest"
-artifact = "scalatest-featurespec_2.13"
+artifact = "scalatest-propspec_2.13"
 version = "3.2.10"
 packaging = "jar"
 
-[[entries.dependencies]]
-group = "org.scalatest"
-artifact = "scalatest-diagrams_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalatest"
-artifact = "scalatest-flatspec_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalatest"
-artifact = "scalatest-funspec_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-reflect"
-version = "2.13.6"
-packaging = "jar"
-
-[[entries.dependencies]]
+[[entries.directDependencies]]
 group = "org.scalatest"
 artifact = "scalatest-refspec_2.13"
 version = "3.2.10"
 packaging = "jar"
 
-[[entries.dependencies]]
+[[entries.directDependencies]]
+group = "org.scalatest"
+artifact = "scalatest-shouldmatchers_2.13"
+version = "3.2.10"
+packaging = "jar"
+
+[[entries.directDependencies]]
 group = "org.scalatest"
 artifact = "scalatest-wordspec_2.13"
 version = "3.2.10"
@@ -1293,8 +1354,20 @@ version = "1.3.0"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scalatest"
-artifact = "scalatest-propspec_2.13"
+group = "org.scala-lang"
+artifact = "scala-library"
+version = "2.13.8"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scala-lang"
+artifact = "scala-reflect"
+version = "2.13.6"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scalactic"
+artifact = "scalactic_2.13"
 version = "3.2.10"
 packaging = "jar"
 
@@ -1306,19 +1379,25 @@ packaging = "jar"
 
 [[entries.dependencies]]
 group = "org.scalatest"
-artifact = "scalatest-shouldmatchers_2.13"
-version = "3.2.10"
-packaging = "jar"
-
-[[entries.dependencies]]
-group = "org.scalatest"
 artifact = "scalatest-core_2.13"
 version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
 group = "org.scalatest"
-artifact = "scalatest-mustmatchers_2.13"
+artifact = "scalatest-diagrams_2.13"
+version = "3.2.10"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scalatest"
+artifact = "scalatest-featurespec_2.13"
+version = "3.2.10"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scalatest"
+artifact = "scalatest-flatspec_2.13"
 version = "3.2.10"
 packaging = "jar"
 
@@ -1330,13 +1409,13 @@ packaging = "jar"
 
 [[entries.dependencies]]
 group = "org.scalatest"
-artifact = "scalatest-funsuite_2.13"
+artifact = "scalatest-funspec_2.13"
 version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scalactic"
-artifact = "scalactic_2.13"
+group = "org.scalatest"
+artifact = "scalatest-funsuite_2.13"
 version = "3.2.10"
 packaging = "jar"
 
@@ -1347,14 +1426,32 @@ version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
-group = "org.scala-lang"
-artifact = "scala-library"
-version = "2.13.8"
+group = "org.scalatest"
+artifact = "scalatest-mustmatchers_2.13"
+version = "3.2.10"
 packaging = "jar"
 
 [[entries.dependencies]]
 group = "org.scalatest"
-artifact = "scalatest-featurespec_2.13"
+artifact = "scalatest-propspec_2.13"
+version = "3.2.10"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scalatest"
+artifact = "scalatest-refspec_2.13"
+version = "3.2.10"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scalatest"
+artifact = "scalatest-shouldmatchers_2.13"
+version = "3.2.10"
+packaging = "jar"
+
+[[entries.dependencies]]
+group = "org.scalatest"
+artifact = "scalatest-wordspec_2.13"
 version = "3.2.10"
 packaging = "jar"
 
