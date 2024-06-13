@@ -14,6 +14,7 @@ backend_packages = [
   "pants.backend.experimental.java.lint.google_java_format",
   "pants.backend.experimental.scala",
   "pants.backend.experimental.scala.lint.scalafmt",
+  "pants.backend.experimental.codegen.protobuf.java",
 ]
 
 [source]
