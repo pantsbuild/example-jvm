@@ -2,7 +2,7 @@
 # Licensed under the Apache License, Version 2.0 (see LICENSE).
 
 [GLOBAL]
-pants_version = "2.23.0"
+pants_version = "2.24.0"
 backend_packages = [
   # This repository demonstrates a mix of Java and Scala, and so both backends are enabled. But each
   # backend can be used independently, so there is no need to expose Scala BUILD file
